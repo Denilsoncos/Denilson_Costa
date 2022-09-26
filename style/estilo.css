@@ -1,0 +1,410 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{									/*Separação usando display:grid*/
+	display:grid;
+	grid-template-areas:
+	"header header"
+	"main main"
+	"article article"
+	"section1 section1"
+	"section2 section2"
+	"section3 section3"
+	"section4 section4";
+	grid-auto-row:200px;
+}
+
+article{								/*aplicando cada espaço*/
+	grid-area:article;
+}
+
+
+#section1{
+	grid-area:section1;
+}
+#section2{
+	grid-area:section2;
+}
+#section3{
+	grid-area:section3;
+}
+#section4{
+	grid-area:section4;
+}
+
+
+header{
+	height:17vh;						/*parte amarela no cabeçalho*/
+	grid-area:header;
+	display:flex;
+	justify-content:space-between;
+	padding:30px;
+	background-color:#F5EA4C;
+	
+}
+
+#titulo1{									/*titulo da página*/
+	margin-top:10px;
+	margin-left:10px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+#navlinks{
+	font-size:1em;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.alinks{
+	
+	border:2px solid black;
+	background-color:white;/*#F5EA4C;*/
+	padding:5px;
+	color:black;
+	font-weight: bold;
+	border-radius:8%;
+}
+
+#ullinks{												/*links da página*/
+	list-style:none;
+	width: 500px;
+	height:70px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-right:120px;
+	}
+	
+.lilinks .alinks{
+	text-decoration:none;
+	margin-left:20px;
+	
+}
+main{												/*aqui começa a edição do main*/
+	grid-area:main;
+	border:15px solid #F5EA4C ;
+	background-color:white;
+	
+}
+
+#lançamentos{									
+	display:flex;							
+	justify-content:space-around;
+	align-content:center;
+	align-items:flex-end;
+}
+
+.imglanc{
+	height:15em;
+	margin-left:40px;
+}
+.p1{
+	font-family: 'Lato', sans-serif;
+	font-size:15px;
+	
+}
+#titulo2{
+	text-align:center;
+	margin:50px;
+	font-family: 'Roboto Mono', monospace;
+	font-size:35px;
+}
+
+
+
+#perfumes{								
+	display:flex;
+	justify-content:space-around;
+	align-content:center;
+	align-items:flex-end;
+}
+
+.preços{												/*preços*/
+	font-size:20px;
+	font-weight: bold;
+}
+.imgperf{
+	height:15em;
+	margin-left:40px;
+}
+.p2{
+	font-family: 'Lato', sans-serif;
+	font-size:15px;
+	
+}
+#titulo3{
+	text-align:center;
+	margin:50px;
+	font-family: 'Roboto Mono', monospace;
+	font-size:35px;
+}
+
+   
+   
+#make{
+	display:flex;
+	justify-content:space-around;
+	align-content:center;
+	align-items:flex-end;
+}
+   
+.imgmake{
+	height:15em;
+	margin-left:40px;
+}
+.p4{
+	font-family: 'Lato', sans-serif;
+	font-size:15px;
+	
+}
+#titulo4{
+	text-align:center;
+	margin:50px;
+	font-family: 'Roboto Mono', monospace;
+	font-size:35px;
+}
+	
+article{											/*campo que está indo as mulheres e dicas*/
+	width:100%;
+	border:15px solid #F5EA4C ;
+	background-color:#F5EA4C;
+	
+	display:flex;
+	justify-content:space-around;
+	align-content:center;
+}
+
+#uldicas{
+	list-style:none;
+	width:28%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	
+ }
+   
+.lidicas{
+	font-family: 'Lato', sans-serif;
+	font-size:25px;
+}
+   
+.imgmulher{
+	height:16em;
+	
+}
+
+#section1 {										/*propaganda*/
+	width:100%;
+	height:25vh;
+}
+
+.propaganda{									/*imagem*/
+	width:100%;
+	height:26vh;
+	border-top:15px solid black;
+	
+}
+
+
+#section2{										/*informações e redes sociais*/
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	background-color:black;
+	height:10vh;
+	padding-top:5px;
+}
+
+#info{											
+	 padding-left:5%;
+  }
+   
+#redesgeral{
+	display:flex;
+	align-items:flex-end;
+}  
+.redes{
+	display:flex;
+	padding-left:15px;
+}
+   
+.icones{
+	height:5vh;
+	
+}
+
+.p5{
+	color:white;
+	font-size:25px;
+	font-family:'open sans', sans-serif;
+	padding-top:3px;
+	padding-left:5px;
+}
+ .ct{
+	 color:white;
+	 font-size:20px;
+ }
+ 
+#section3{
+	width:100%;
+	background-color:black;
+}
+ .pag{
+	 padding-left:70px;
+	 
+ }
+
+#section4{								/*patente do site*/
+	width:100%;
+	height:7vh;
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	background-color:black;
+}
+
+.p6{
+	padding-top:5px;
+	font-family:'open sans', sans-serif;
+	color:white;
+}
+
+#main2{											/*Aqui começa a estilização do formulário*/
+	border:15px solid #F5EA4C ;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+form{
+	background-color:#F5EA4C;
+	width:30%;
+	border:5px solid #F5EA4C;
+	display:flex;
+	flex-direction:column;
+	align-content:center;
+	padding:10px;
+	margin:30px;
+	
+}
+#h1form{
+	margin-top:30px;
+	font-family: 'Roboto Mono', monospace;
+	font-size:30px;
+	
+}
+
+label{
+	font-family: 'Lato', sans-serif;
+	font-size:20px;
+}
+
+#fieldsetb{
+	
+	display:flex;
+	flex-direction:inline;
+	justify-content:flex-end;
+	align-item:center;
+	border:0px;
+	background-color:#F5EA4C;
+	
+}
+
+button{													/*botão de enviar*/
+	width:20%;
+	height:5vh;
+	font-weight: bold;
+	border:3px solid black;
+	
+	
+}
+
+#fieldsetesq{
+	border:0px;
+	margin-top:0px;
+}
+
+
+#h1qs{										/*Aqui começa a estilização de quem somos*/
+	text-align:center;
+	margin-top:50px;
+	font-family: 'Roboto Mono', monospace;
+	font-size:35px;
+}
+
+#partes{											
+	padding:80px;
+	
+}
+
+#part1{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	border:15px solid #F5EA4C;
+	padding:15px;
+}
+
+#part2{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-top:20vh;
+	border:15px solid #F5EA4C;
+	padding:15px;
+	
+	
+}
+.imgqs{
+	height:70vh;
+	margin-right:5%;
+	
+	
+}
+
+.imgqs2{
+	height:60vh;
+	width:50%;
+	
+	
+	
+}
+
+.pqs{
+		border:30px solid #F5EA4C;
+		width:43%;
+		font-family:arial, sans-serif;
+		font-size:25px;
+		margin-left:5%;
+		background-color:#F5EA4C;
+	
+}
+
+.pqs2{
+		border:30px solid #F5EA4C;
+		width:43%;
+		font-family:arial, sans-serif;
+		font-size:25px;
+		margin-left:5%;
+		background-color:#F5EA4C;
+}
+
+
+#h1sp{												/*Aqui começa a estilização do SUPORTE*/
+	text-align:center;
+	margin-top:50px;
+	font-family: 'Roboto Mono', monospace;
+	font-size:35px;
+	
+	
+}
+
+#ctt{
+	
+	font-family: 'Lato', sans-serif;
+	font-size:15px;
+	margin:3%;
+	align-self:flex-start;
+}
